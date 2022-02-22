@@ -1,21 +1,19 @@
 import processing.core.PApplet;
 
+/*
+This program draws a simple house
+@author: T. Guo
+*/
+
 public class Sketch extends PApplet {
 	
-	
-  /**
-   * Called once at the beginning of execution, put your size all in this method
-   */
   public void settings() {
-	// put your size call here
+	//set size (800 width 600 height)
     size(800, 600);
   }
 
-  /** 
-   * Called once at the beginning of execution.  Add initial set up
-   * values here i.e background, stroke, fill etc.
-   */
   public void setup() {
+    //set background to light blue
     background(102, 217, 255);
   }
 
@@ -46,7 +44,6 @@ public class Sketch extends PApplet {
   //window lines
   line(275, 350, 275, 400);
   line(250, 375, 300, 375);
-
   line(525, 350, 525, 400);
   line(500, 375, 550, 375);
 
