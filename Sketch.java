@@ -1,53 +1,53 @@
 import processing.core.PApplet;
 
-/*
-This program draws a simple house
-@author: T. Guo
-*/
+/** 
+* This program draws a simple house
+* @author: T. Guo
+**/
 
 public class Sketch extends PApplet {
 	
   public void settings() {
-	//set size (800 width 600 height)
+	// set size (800 width 600 height)
     size(800, 600);
   }
 
   public void setup() {
-    //set background to light blue
+    // set background to light blue
     background(102, 217, 255);
   }
 
   public void draw() {
-    //house base
+    // house base
     fill(255,255,204);
     rect(200, 300, 400, 300);
     triangle(200, 300, 400, 200, 600, 300);
     
-    //grass
+    // grass
     fill(51, 204, 51);
     rect(0, 580, 800, 20);
     
-    //door
+    // door
     fill(255, 204, 102);
     rect(360, 450, 80, 130);
 
-    //windows
+    // windows
     fill (51, 204, 255);
     rect(250, 350, 50, 50);
     rect(500, 350, 50, 50);
     
-    //yellow (sun and doorknob)
+    // yellow (sun and doorknob)
     fill(255, 255, 0);
     ellipse(100, 100, 100, 100);
     ellipse(420, 520, 10, 10);
     
-    //window lines
+    // window lines
     line(275, 350, 275, 400);
     line(250, 375, 300, 375);
     line(525, 350, 525, 400);
     line(500, 375, 550, 375);
 
-    //flower stems
+    // flower stems
     stroke(51, 153, 51);
     strokeWeight(4);
     line(250, 580, 250, 520);
@@ -55,7 +55,7 @@ public class Sketch extends PApplet {
     line(475, 580, 475, 520);
     line(550, 580, 550, 520);
     
-    //flowers
+    // flowers
     stroke(0);
     strokeWeight(0);
 
@@ -74,7 +74,7 @@ public class Sketch extends PApplet {
     ellipse(475, 520, 20, 50);
 
 
-    //flower centers
+    // flower centers
     strokeWeight(1);
     fill(255, 255, 0);
     ellipse(250, 520, 20, 20);
